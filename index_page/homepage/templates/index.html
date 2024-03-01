@@ -1,0 +1,675 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ART | co</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/ARTco.png' %}" rel="icon">
+  <link href="{% static 'img/ARTco.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- {% static 'vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- Máquina de escribir CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <a href="{{homepage_url}}" class="hero-logo" data-aos="zoom-in"><img src="{% static 'img/hero-logo.png' %}" alt="" width="130" height="133"></a>
+      <h1 data-aos="zoom-in">&nbsp;&nbsp;&nbsp;&nbsp;ARTEAGA | Corporación</h1>
+ 
+      <h6 data-aos="fade-up" ><span style="color:white" id="maquina-escribir" ></span>.</h6>
+      <br>
+
+      <a data-aos="fade-up" data-aos-delay="200" href="#about" class="btn-get-started scrollto">Iniciar</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div > <!--class="logo"-->
+        <a href="{{homepage_url}}"><img src="{% static 'img/logo.png' %}" alt="" class="img-fluid" width="133" height="137"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+          <li><a class="nav-link scrollto " href="#productos">Productos</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Cualidades</a></li>
+          <li><a class="nav-link scrollto" href="#"> <strong>{{ demo }}</strong> </a></li>
+            
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Sección Sobre Nosotros ======= -->
+      <section id="about" class="about">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-up">
+            <h2>Sobre Nosotros </h2>
+            
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="image">
+                <!--<img src="{% static 'img/about.jpg' %}" class="img-fluid" alt="">-->
+                <video preload="auto" autoplay muted loop autobuffer width="100%" height="100%" webkit-playsinline playsinline>
+                  <source src="{% static 'video/equipo.mp4' %}" type="video/mp4" >
+                  <p>Tu navegador no puede mostrar este video.</p>
+                </video>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+                <h3>Visión</h3>
+                <p class="fst-italic">
+                Aportar innovación, confianza y excelencia a nuestros clientes.
+                </p>
+                
+                <h3>Misión</h3>
+                <p class="fst-italic">
+                Ser ejemplo de excelencia en la transformación y capacitación digital.
+                </p>
+                <h3>Valores</h3>
+                <ul class="fst-italic">
+                  <li><i class="bx bx-check-double"></i> Innovación</li>
+                  <li><i class="bx bx-check-double"></i> Profesionalismo</li>
+                  <li><i class="bx bx-check-double"></i> Responsabilidad</li>
+                  <li><i class="bx bx-check-double"></i> Excelencia</li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    <!-- Fin Sección Sobre Nosotros -->
+
+    <!-- ======= Sección de Servicios ======= -->
+      <section id="services" class="services">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-up">
+            <h2>Servicios</h2>
+            <p>Soluciones digitales empresariales</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
+                <i class="bx bi-cpu-fill"></i>
+                <h4>Desarrollo de Software a Medida</h4>
+                <p>Ejecutamos un análisis en conjunto para detallar el alcance de sus necesidades tecnológicas,
+                  para brindarle una solución de software a medida con una arquitectura basada en la protección de datos,
+                  y recuperación ante desastres, con esquemas On-Premise o Cloud.</p>
+              </div>
+              
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bi-person-workspace"></i>
+                <h4>Consultorías en Proyectos Tecnológicos</h4>
+                <p>Ejecutamos auditorías y consultorías bajo normas internacionales por especialistas certificados en el tema,
+                  incluyendo análisis de las normativas Nacionales emitidas por el ente regulador en caso que aplique.</p>
+              </div>
+              
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bxs-report"></i>
+                <h4>Creación de Infraestructuras Cloud</h4>
+                <p>Levantamos un análisis de los requerimientos a nivel de datos, flujos de trabajo y capacidades de procesamiento
+                  para establecer un diagrama directo en el Cloud o de manera híbrida, acoplándose a las capacidades económicas del cliente.
+                </p>
+              </div>
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bi-shield-fill-check"></i>
+                <h4>Gestión de Riesgos y Continuidad del Negocio</h4>
+                <p>Ejecutamos un análisis de tu empresa para documentar, ejecutar y probar los diferentes planes alineados a las
+                  estrategias de tu empresa, con el fin de afrontar crisis y mantener una alta disponibilidad de tu negocio.
+                </p>
+              </div>
+            </div>  
+            
+            <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("{% static 'img/services.jpg' %}");' data-aos="fade-left" data-aos-delay="100"></div>
+          </div>
+
+        </div>  
+      </section>
+    <!-- Fin Sección Servicios -->
+
+  
+
+    <!-- ======= Nuestros Productos ======= -->
+      <section id="productos" class="why-us">
+        <div class="container-fluid">
+
+          <div class="row">
+
+            <div class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-stretch">
+
+              <div class="content" data-aos="fade-up">
+                <h3>Nuestros <strong>Productos</strong></h3>
+                <p>
+                  La integración de todos nuestro software centralizan su información para una Gobernanza óptima, eficiente, eficaz que harán que la toma de decisiones sea en base a su realidad; por tanto, le detallamos a continuación nuestros productos:
+                </p>
+              </div>
+
+              <div class="accordion-list">
+                <ul>
+                  <li data-aos="fade-up" data-aos-delay="100">
+                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> ARTco - CRM <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                      <p>
+                        El control y seguimiento de cada acción realizada a sus clientes es seguida mediante un software automatizado y centralizado de la información global de sus clientes y la naturaleza de sus operaciones.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-delay="200">
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> ARTco - RRHH<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                      <p>
+                        Automatiza la Gestión del Talento Humano, empleando las mejores prácticas del mercado con el fin de lograr el desarrollo de equipos de trabajo que se superen constantemente y lograr tener centralizado toda la información de sus colaboradores ya sea a nivel de una sola empresa o multiempresa.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-delay="300">
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> ARTco - Inventario/Facturación <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                      <p>
+                        Concentrarás la esencia de tu empresa y su crecimiento, teniendo un control en tiempo real de todo el inventario para mantener una estructura ordenada y reducir el tiempo en el manejo de tu inventario.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-delay="300">
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> ARTco - Gestión de Cobros <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                      <p>
+                        El seguimiento oportuno de cada cliente para aplicar la debida diligencia en cobros es ideal para administrar un historial en un sistema centralizado y poder cubrir con la recuperación de tus diferentes carteras.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-delay="300">
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed"><span>05</span> ARTco - Gestión de Ventas <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
+                      <p>
+                        El seguimiento oportuno de cada cliente para aplicar la debida diligencia en ventas es ideal administrar un historial en un sistema centralizado y poder cubrir con las metas propuestas mes a mes.
+                      </p>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="col-lg-5 order-1 order-lg-2 align-items-stretch video-box" style='background-image: url("{% static 'img/why-us.jpg' %}");' >
+              
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    <!-- FIN Nuestros Productos -->
+
+    <!-- ======= Portfolio Section ======= -->
+     <section id="portfolio" class="portfolio" >
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Cualidades de nuestros servicios y productos</h2>
+          <p>Selecciona cada uno:</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-app">Seguridad</li>
+              <li data-filter=".filter-card">Escalable</li>
+              <li data-filter=".filter-web">Fácil uso</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/confiabilidad.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Confiabilidad</h4>
+                <p>El software opera bajo estándares de ingeniería de software confiables.</p>
+                <div class="portfolio-links"><br>
+                  <a href="{% static 'img/portfolio/confiabilidad.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>CONFIABILIDAD</b>: El software opera bajo estándares de ingeniería de software confiables."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/productividad.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Productivilidad</h4>
+                <p>Sus procesos son adaptados con el fin de generar eficiencia ya sea de manera colectiva o individual.</p>
+                <div class="portfolio-links">
+                  <br>
+                  <a href="{% static 'img/portfolio/productividad.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>PRODUCTIVIDAD</b>: Sus procesos son adaptados con el fin de generar eficiencia ya sea de manera colectiva o individual."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/robustez.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Robustez</h4>
+                <p>El software se comporta de forma razonable aún en circunstancias que no fueron anticipadas
+                  en la especificación de requerimientos.</p>
+                <div class="portfolio-links"><br>
+                  <a href="{% static 'img/portfolio/robustez.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>ROBUSTEZ</b>: El software se comporta de forma razonable aún en circunstancias que no fueron anticipadas en la especificación de requerimientos."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/amigabilidad.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Amigabilidad</h4>
+                <p>El software mantiene una interfaz de usuario de fácil entendimiento.</p>
+                <div class="portfolio-links"><br>
+                  <a href="{% static 'img/portfolio/amigabilidad.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>AMIGABILIDAD</b>: El software mantiene una interfaz de usuario de fácil entendimiento."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/interoperabilidad.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Interoperabilidad</h4>
+                <p>Mantiene la habilidad de coexistir y cooperar con los demás módulos dentro del software.</p>
+                <div class="portfolio-links"><br>
+                  <a href="{% static 'img/portfolio/interoperabilidad.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>INTEROPERABILIDAD</b>: Mantiene la habilidad de coexistir y cooperar con los demás módulos dentro del software."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/performance.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Performance</h4>
+                <p>Uso de los recursos informáticos en la nube de manera económica.</p>
+                <div class="portfolio-links"><br>
+                  <a href="{% static 'img/portfolio/performance.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>PERFORMANCE</b>: Uso de los recursos informáticos en la nube de manera económica."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/mantenibilidad.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Mantenibilidad</h4>
+                <p>Generación de cambios según requermientos nuevos o modificaciones a los existentes.</p>
+                <div class="portfolio-links"><br>
+                  <a href="{% static 'img/portfolio/mantenibilidad.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>MANTENIBILIDAD</b>: Generación de cambios según requermientos nuevos o modificaciones a los existentes."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/portabilidad.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Portabilidad</h4>
+                <p>Puede ser ejecutado en plataformas web ya sea en dispositivos móviles o de escritorio.</p>
+                <div class="portfolio-links"><br>
+                  <a href="{% static 'img/portfolio/portabilidad.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>PORTABILIDAD</b>: Puede ser ejecutado en plataformas web ya sea en dispositivos móviles o de escritorio."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/comprensibilidad.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Comprensibilidad</h4>
+                <p>Su comportamiento es predecible y genera amigabilidad al usuario según sus procesos adaptados.</p>
+                <div class="portfolio-links"><br>
+                  <a href="{% static 'img/portfolio/comprensibilidad.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<b>COMPRENSIBILIDAD</b>: Su comportamiento es predecible y genera amigabilidad al usuario según sus procesos adaptados."><FONT SIZE=3><i>Ver</i></FONT SIZE=3></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Sección CEO ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div class="quote-icon">
+            <i class="bx bxs-quote-right"></i>
+          </div>
+
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    La incorporación de procesos automatizados en una empresa, representan avance para lograr el éxito empresarial.
+                  </p>
+                  <img src="{% static 'img/testimonials/perfil_1.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Carlos Arteaga</h3>
+                  <h4>CEO &amp; Fundador</h4>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    El control y establecimiento de procesos adecuados dentro de una empresa generarán valor en cada actividad.
+                  </p>
+                  <img src="{% static 'img/testimonials/perfil_2.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Carlos Arteaga</h3>
+                  <h4>CEO &amp; Fundador</h4>
+                </div>
+              </div><!-- End testimonial item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section>
+    <!-- FIN Sección CEO -->
+
+    <!-- ======= Nuestras Tecnologías ======= -->
+      <section id="clients" class="clients">
+        <div class="container">
+
+          <div class="row">
+            
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in">
+              <h6>Python</h6>
+              <img src="{% static 'img/clients/client-1.png' %}" class="img-fluid" alt="">
+              
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+              <h6>JavaScript</h6>
+              <img src="{% static 'img/clients/client-2.png' %}" class="img-fluid" alt="">
+              
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+              <h6>Servidores Linux</h6>
+              <img src="{% static 'img/clients/client-3.png' %}" class="img-fluid" alt="">
+              
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+              <h6>Amazon Web Services</h6>
+              <img src="{% static 'img/clients/client-4.png' %}" class="img-fluid" alt="">
+              
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+              <h6>PostgreSQL</h6>
+              <img src="{% static 'img/clients/client-5.png' %}" class="img-fluid" alt="">
+              
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+              <h6>MySQL</h6>
+              <img src="{% static 'img/clients/client-6.png' %}" class="img-fluid" alt="">
+              
+            </div>
+            <h1>Nuestras Tecnologías</h1>
+          </div>
+
+        </div>
+      </section>
+    <!-- Fin Nuestras Tecnologías -->
+
+    <!-- ======= Preguntas frecuentes ======= -->
+      <section id="faq" class="faq">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-up">
+            <h2>Preguntas Frecuentes</h2>
+          </div>
+
+          <ul class="faq-list">
+
+            <li data-aos="fade-up">
+              <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">¿Cuál es la diferencia entre un software a medida y uno empaquetado? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  <b>El software a medida</b> tiene su tiempo de desarrollo, se adapta a las necesidades específicas de la empresa en general, es más caro que el software estándar.
+                  <br><br>
+                  <b>El software empaquetado</b> ya fue desarrollado, la empresa lo compra ya hecho, suele ser más barato que el software a medida, probablemente tenga muchas funciones que la empresa no usará; además a veces no se adapta completamente a las necesidades de una empresa.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">¿Cuáles son los beneficios de alojamiento de una plataforma tecnológica en la nube? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Bajo costo de infraestructura bajo demanda, soporte de ciberseguridad, servicio personalizado, constante actualización de licencias, servicio las 24 horas.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">¿Cuál es la importancia de gestionar los riesgos y la continuidad del negocio en una empresa? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Su fin es proteger a su empresa sobre cualquier tipo de desastre que pueda tener repercusiones ante sus procesos críticos, así como saber responder ante un desastre ya sea externo o interno generando un tener un plan de acción para todos los riesgos y su mitigación, en ambos casos estos métodos son probados para continuar con la operativa normal.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">¿Qué tipo de seguridad cibernética debe tener un software en la nube? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  <br>
+                  <dt>Seguridad en base a:</dt>
+                  <br>
+                  <dd>1. Seguridad física con el proveedor</dd>
+                  <dd>2. Inteligencia, vigilancia y prevención de amenazas</dd>
+                  <dd>3. Cifrado</dd>
+                  <dd>4. Pruebas de vulnerabilidad y penetración</dd>
+                  <dd>5. Microsegmentación (Dividir el despliegue en la nube)</dd>
+                  <dd>6. Cortafuegos/Firewall</dd>
+                  </dl>
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">¿Qué tipo de políticas de seguridad deben existir para manejar la información y su acceso? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Políticas de hardening, protección de claves, encriptación, periodicidad de backup, almacenamiento y gobernanza de datos.
+                </p>
+              </div>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </section>
+    <!-- FIN de preguntas frecuentes -->
+
+    <!-- ======= Sección de contacto ======= -->
+      <section id="contact" class="contact section-bg">
+        <div class="container">
+
+          <div class="section-title">
+            <h2>Contacto</h2>
+            <p>Si necesitas información sobre nuestros servicios, escríbenos al siguiente correo:
+              <strong>info@arteagacorporacion.com</strong>
+            </p>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-12">
+              <div class="info d-flex flex-column justify-content-center" data-aos="fade-right">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Ubicación:</h4>
+                  <p>Honduras,<br>Tegucigalpa, DC 11101</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Correo:</h4>
+                  <p>info@arteagacorporacion.com</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!--<div class="col-lg-8 mt-5 mt-lg-0">
+             
+              <form action="." method="POST" role="form" class="php-email-form" data-aos="fade-left">
+                {% csrf_token %}
+                <input type="hidden" name="action" value='contacto'>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Tu Correo" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Cargando</div>
+                      <div class="sent-message">¡Enviado con éxito! <br> Si su correo es válido, recibirá una confirmación.</div>
+                      <div class="error-message">Se ha producido un error</div>
+                </div>
+                <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+              </form>
+            </div>-->
+
+          </div>
+        </div>
+      </section>
+    <!-- FIN de Sección Contacto -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+      <div class="footer-top">
+
+        <div class="container">
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6" >
+              <a href="{{homepage_url}}" class="scrollto footer-logo" ><img src="{% static 'img/hero-logo.png' %}" alt="" ></a>
+              <h3>ART | co&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+              <p>"Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas"</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>ART|co</span></strong>. Todos los Derechos Reservados
+        </div>
+        <div class="credits">
+          Desarrollado por <a href="{{homepage_url}}">Arteaga|Corporación</a>
+          <b>|</b>
+          <font size=2><a href="{{politicaPrivacidad_url}}" >Política de Privacidad</a></font size=2>
+        </div>
+          
+      </div>
+      
+    </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- {% static 'vendor JS Files -->
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/machine.js' %}"></script>
+
+</body>
+
+</html>
